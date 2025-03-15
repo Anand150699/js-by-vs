@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"  href="movie.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <div id="app">
+   <header class="header">
+      <div>Movie Deck</div>
+   </header>
+   <form class="search-cont" onsubmit="handleSearch(event)">
+     <input type="text" placeholder="Movies name..." id="movieName" value=""/>
+     <input type="submit" value="Search"/>
+   </form>
+   <div class="filter-container">
+   <div style="margin-left: 120px;">
+    <button onclick="getMovies(false)">All</button>
+    <button onclick="getMovies(true)">Favourite List</button>
+   </div>
+   <select class="select-container" onchange="handleSort(event)">
+    <option value="">Sort by</option>
+    <option value="date">Oldest to latest(date)</option>
+    <option value="rating">Least to most(rating)</option>
+   </select>
+   </div>
+   <div id="movieList">
+  
+   </div>
+   <div class="pagination">
+    <button onclick="handlePagination('prev')">Previous</button>
+    <button id="current">Current Page: 1</button>
+    <button onclick="handlePagination('Next')"">Next</button>
+   </div>
+  </div>
+  <script src="movie.js"/>
+</body>
+</html>
