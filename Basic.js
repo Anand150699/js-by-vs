@@ -3,18 +3,26 @@
 
 
 // // Javascript is client side scripting Language 
+//A client-side scripting language is a programming language that runs in the user's web browser rather than on a web server. 
+// These languages are mainly used to create interactive and dynamic web pages.
 // // Around 98.8% Website of the world use Javascript for their client side Programming Language
 // // This is one of the Most Popular language in the world.
 // // Javascript and Java are two diff programming language
 
 // // Javascript is dynamic type casting Programming Language
+// // unlike Java, Javascript does not need any type delcration(int/long for Integer, float/double for Decimal number, char for Character)
 //Browser renders HTML file only, if Js file is included in HTML file in script tag then the browser
 //downloads it and then it runs the js file
 
 
 // // There is three keyword in javascript that use for creating the variable (let  , var and  const)
 
-// // unlike Java, Javascript does not need any type delcration(int/long for Integer, float/double for Decimal number, char for Character)
+
+// //✅ Uses: Dynamic content, animations, form validation, API calls
+// ✅ Works with: HTML & CSS
+// ✅ Libraries & Frameworks: React.js, Angular, Vue.js
+
+
 
 // // here a is variable name
 // //  var is keyword 
@@ -80,7 +88,7 @@
 // // function call is same as java
 // // alert('Are you sure you are 18+? ')// only alerts with okay button
 // // confirm('Are you sure you are 18+?')// need to confirm with okay and cancel button
-
+//prompt("Enter a number") used for user's input
 
 
 // //   Function declartion
@@ -93,7 +101,7 @@
 // }
 
 // //  this is function calling
-// addTwonumber(10 , 20);// here 10 and 20 are arguments
+// addTwonumber(10 , 20);// here 10 and 20 are arguments i.e. function ivocation
 
 
 
@@ -126,7 +134,7 @@ console.log(window);
 
 
 // // memory       [a: undefined]
-//  console.log(a)  //   a:undefined// undefined //
+//  console.log(a)  //   reference error Cannot access 'a' before initialization 
 // let a = 20; // normal function  []
 
 
