@@ -23,7 +23,7 @@
 
 // Global Execution Context => Whenever your javascript code is started executing by browser or nodesjs server
 // than GEC will be created , this is the top level of execution wherer all JS code execute 
-// All the variable define in context will be part of Global object which is equivalent to the window object
+// All the variable define in context will be part of Global object which is equivalent to the window object i.e. window.variable
 // In global execution context this will be pointed to the window  , meand this will be bind with window 
 // the value of this will be window
 // GEC is combination of memory and thread of execution (code running) //
@@ -66,6 +66,11 @@
 // console.log(a1) //  30
 
 
+///LEC. NO 185
+///21 MAR 2025
+
+
+
 // Example 3
 //console.log(c1); // we are accessing c1 before declaraion 
 
@@ -90,7 +95,7 @@
 
 // What is hoisting ?
 // hoisting is the memory assignment phase due to that 
-// variablecan be access top of it declaration
+// variablecan be accessed at top of it declaration
 
 // Does let and const are hoisted ?
 

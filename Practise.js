@@ -81,7 +81,7 @@
 
 
 
-// console.log('a' > 2);
+// console.log('a' > 2);// "a"==>NaN so false NaN<2 false
 
 
 

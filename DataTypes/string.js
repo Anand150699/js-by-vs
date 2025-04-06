@@ -2,7 +2,7 @@
 
 
 // String in Javascript
-
+//Strings are immutable in javascsript as like in java it cant be changed
 // Creating string variable
 // 1. string literal
  var orgName = 'Newton';
@@ -214,7 +214,7 @@ console.log( 'ttt=>', ttt) //  205002060
 
 // Minus convert numeric string into the  number
 
-var tts = -("20" + "30" + "50") - ("30" - "30" + 60);//-203050-60//202990
+var tts = -("20" + "30" + "50") - ("30" - "30" + 60);//-203050-60//=202990
 
 console.log("tts=>>", tts); //
 

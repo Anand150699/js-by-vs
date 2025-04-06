@@ -3,7 +3,7 @@
 
 
 
-// // Number
+// // Number Literal
 // var n1 =2345;
 // var n2 = 34567.2345;
 // console.log('n1=>',typeof n1 ,"n2=>", typeof n2)
@@ -13,7 +13,17 @@
 
 // var a =  new Number(40);
 
+//var a =  Number("123");     // 123 (string to number)
+// Number("123abc");  // NaN (invalid string)
+// Number(true);      // 1
+// Number(false);     // 0
+// Number(null);      // 0
+// Number(undefined); // NaN
+// Number("");        // 0
+// Number(" ");       // 0 (space is considered empty)
+
 //Here the type of constructior is object always
+
 // //  var aa =  a+40 ; //  80
 // // TODO:1
 // // This will be clear at the time when constructor function and object data type is completed
@@ -237,6 +247,7 @@ console.log(isNaN('234')) // false
 console.log(isNaN('2344VISHAL')) // true
 console.log(isNaN('2334a9999')) // true
 
-console.log(isNaN(''))//false +""==>0
-
+console.log(isNaN(''))//false +""==>0 +" "===>0
+console.log(isNaN(+[]))//===>false  +[]===>0
+console.log(isNaN(+{}))//====>true +{}===>NaN
 console.log(isNaN('A')) // true

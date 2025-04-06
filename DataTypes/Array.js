@@ -155,7 +155,7 @@
 // // //  console.log(result) // NaNHello
 
 // // //  // parseInt convert first array element into the number
-// // //  // + operator convert empty array into 0 but it will give NaN IF there is any element inside the array
+// // //  // + operator convert empty array into 0 but it will give NaN IF there are 2 or more than 2 elements inside the array
 
 
 // // //  // In boolean empty array is truthy value 
@@ -179,7 +179,7 @@
 // // // //  console.log(array.join()) //  '1,2,3,4' => default seperated by comma(,)
 // // // //  console.log(array.toString())  // '1,2,3,4'
 
-// // // //  console.log(array.join(" ########## ")) 
+// // // //  console.log(array.join(" ########## ")) ///"1##########2##########3##########"
 
 
 // // // // Split method are used to convert string into the array on the basis of identifier
@@ -259,7 +259,7 @@
 // // // console.log('Before shift' , array.length , array)
 // // // var shiftedElement  = array.shift();
 
-// // // console.log(shiftedElement , array)
+// // // console.log(shiftedElement , array)//1 [2,3,6]
 
 
 // // // unshift and push you can give multiple  items as argument
@@ -313,7 +313,7 @@
 
 // // // // // [1,2,3,4,5,6,7,8,9,10,11,12,13,14]; // indexes => [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
 
-// // // // //Negative Value will always start form  the end
+// // // // //Negative Value will always start form  the end [1,2,3,4,5]====>[-5,-4,-3,-2,-1]
 
 // // // // var slice5 = array.slice(-8 , -3); // start  = -8
 

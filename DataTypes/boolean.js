@@ -89,13 +89,14 @@ const result  = (100/100 -1) ||  2;
 
 console.log(result)
 
+// || gives first truthy value
 
 //  AND (&&)
 
 //this will return false if anyone the condition gives falsy value , whenever it get falsy value
 // it will return false and stop execution
 
-
+// && gives first falsy value
 function call () {
     console.log('hey call')
     return true;

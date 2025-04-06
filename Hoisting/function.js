@@ -1,4 +1,4 @@
-//LEC NO.: 188 23 MAR 2024
+//LEC NO.: 191 27 MAR 2024
 
 
 // Execution Context  => The environment  where your Js Code is Executed
@@ -24,20 +24,20 @@
 //    const message = `Hi, ${firstName} 
 //    ${lastName} 
 //     Your score is:  ${res}`
-//    console.log(message)
-//    console.log(globalVariable)
+//    console.log(message)///Hi, vishal sharma
+//    console.log(globalVariable)// hey I am global variabel
 //  }
 //  function add(x, y ,z,) {
 //     var result = x+y+z;
 //     print(result) 
-// //     console.log('add end')
+// //     console.log('add end')//add end
 // //  }
 // //  add(a ,b,c)
 // //  console.log(a,b,c)
 
 
 
-//LEC. NO. 191 27 MAR 2024
+//LEC. NO. 192 27 MAR 2024
 
 
 // var a  =60 ;
@@ -123,9 +123,9 @@
  // what is o/p of console.log
 
 let a = 50;
-var b = 40;
+var b = 40;//90
 {
-  console.log(b);
+  console.log(b);//40
 //   console.log(a); 
   var b = 90;
   let a = 200;
@@ -134,13 +134,13 @@ var b = 40;
 //var  let const 
 function call() {
    // console.log(b); 
-   console.log(a); 
-   let b = 55;
-   var a = 65;
-   console.log(a);
-   console.log(b);
+   console.log(a); //undefined
+   let a = 55;
+   var b = 65;
+   console.log(a);//65
+   console.log(b);//55
  }
 
  call();
- console.log(a);
- console.log(b);
+ console.log(a);//50
+ console.log(b);//90

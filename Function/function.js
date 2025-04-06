@@ -109,7 +109,7 @@
 
 // printData(2,'Hello', 'Hi ', 'sahi' , 'hai') // 
 
-// // if there is no argument passed respected to the declare parameter , 
+// // if there is no argument passed respected to the declared parameter , 
 // // that parameter value will be undefined
 
 
@@ -127,7 +127,7 @@
 //         return value*multiplier;
 // }
 
-// multiplyByNumberOr2(10 , 10) // 10
+// multiplyByNumberOr2(10 , 10) // 100
 
 // var result  =multiplyByNumberOr2(10) // 
 // console.log(result) //      NaN
@@ -177,14 +177,22 @@
 
 // //  functoon statement(declration) vs function expression in details
 // // function expression  => If we  assign the  function in variable that is called function expression
+
+//function expresion: 1. can be anonymous or named 2. an be assigned to variables, passed as argumnets
+//  or returned from another function 3. not hoisted like function declaration
+//Arrow function is type of function expression
+
+//function declaration cannot be anonymous it must have a name
+
+
 //  var b = function getFullName() {
 //     console.log('Surprise !!!!');
 //  }
-// //  b() // ?? 
+// //  b() // surprise
 
 //  console.log(b) //  function itself
-//  console.log(b()) //  Surprise !!!!
-//  //console.log(getFullName) // this will throw error here js neglect name of function in function expression
+//  console.log(b()) //  Surprise !!!! undefined
+//  //console.log(getFullName) // this will throw error here js neglect name of function in function expression reference error getfullname is not defined
 
 
 
@@ -193,6 +201,22 @@
 // // Types of function
 
 // // diff  b/w normal function and arrow functions in terms of "this"
+
+// 4. Hoisting
+// Normal functions are hoisted — you can call them before they're defined.
+
+// Arrow functions are not hoisted — they're treated as variables.
+
+// sayHi(); // ✅ works
+// function sayHi() {
+//   console.log("Hello");
+// }
+
+// // greet(); ❌ Error
+// const greet = () => console.log("Hi");
+
+
+
 // // arrow functions
 
 
@@ -214,7 +238,7 @@
 //   // we can pass function as a arguments
 
 // // here we are accepting function as  parameter
-// // the function which accept the function as parameter is called higher order functions
+// // the function which accept the another function as parameter is called higher order functions
 
 
 
@@ -269,7 +293,7 @@
 
 // func(); //  Hey2
 
-// // IIFE  (Immediately Invoked Functions     Expressions)
+// // IIFE  (Immediately Invoked Functions Expressions)
 // // The function is called as soon as function is created ,  this type of function does 
 // // not need explicit call or invoked
 // // IIFE functions reference will be not available in memory for later use like another function , 
