@@ -1,12 +1,22 @@
 // LEC NO.: 220 28 APR 2024
-
+//Constructor Functions
 
 
 // console.log('Hey We are learning , Construtor Function here');
 
+
+
+//Constructor functions are used to create objects in js.
+// if we want to create multiple objects having same properties and methods we use constructor functions
+
 // // Constructor Function can be created only in normal function not in arrow functions
-// // why ?? because normal function have it own context (this)
+// // why ?? because normal function have it own context (this) and arrow function doesn't have their own this they inherit from their enclosing scope
 // // best practise to create constructor function always start with capital letter
+//At the time of function call they should call using new keyword
+// Constructor Function always return the this 
+// if we return the object then constructor function return object
+// If we try to return any value apart from the Object(function , array  , object) this  will return the this only
+
 
 // const number =  new Number() // Number is constructor function 
 
@@ -79,7 +89,7 @@
 function Student () {
     // return  'Hey'
     // this = {}
-    console.log('this' , this) //  {name: 'Raj'}
+    console.log('this' , this) // Student {name: 'Raj'}
      this.name = 'Raj'
     return this;
 }
@@ -163,7 +173,8 @@ console.log(JSON.stringify(bb) == JSON.stringify(bb2))
 
 // Person1('Arrow=> Normal call')
 
-// const per1 = new Person1(' Arrow normal Constructor') */
+// const per1 = new Person1(' Arrow normal Constructor') *//pract.js:5 Uncaught TypeError: Person1 is not a constructor at
+
 
 
 // /* function Employee () {

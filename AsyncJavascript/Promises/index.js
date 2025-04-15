@@ -1,18 +1,37 @@
 //LEC NO. : 236 15 MAY 2024 
-// 
-// 
 
 
+// Promises 
+//Promise is nothing but eventual completion of task
+// •	Promises in JavaScript are a way to handle asynchronous operations. 
+// •	In simpler terms, they allows us to deal with actions that take 
+// some time to complete, like fetching data from a server, reading a file, or any other task that doesn't happen immediately. 
+// •	Instead of blocking the execution of your code until the task is done, 
+// promises provide a mechanism to execute code when the task is finished, either successfully or with an error.
+// •	You create a promise using the new Promise() constructor. 
+// •	This constructor takes a function as its argument, which itself takes two parameters: resolve and reject. 
+// •	Inside this function, you perform your asynchronous operation and call resolve when it's successful or reject if it encounters an error.
+// •	Once you've created a promise, you can consume it using .then() and .catch() methods. 
+// •	The .then() method is called when the promise is resolved, and the .catch() method is called when the promise is rejected.
+// •	States of a Promise A Promise can be in one of three states:
+// •	Pending: The Promise is still pending, and the asynchronous operation has not yet completed.
+// •	Fulfilled: The Promise has been resolved, and the asynchronous operation has completed successfully.
+// •	Rejected: The Promise has been rejected, and the asynchronous operation has failed.
+// •	Promise.all(): This method takes an array of promises and returns a single promise that resolves 
+// when all of the input promises have resolved, or rejects with the reason of the first promise that rejects
 
 
-// // Array 
-// // // String 
-// // // Number
-// // // Function 
-// // // Object 
-// // // Array 
+// // Array Constructor
+// // // String Constructor
+// // // Number Constructor
+// // // Function Constructor
+// // // Object Constructor
+// // // Array Constructor
 
 // // // array  => Array()
+
+//const promise = new Promise((resolved, rejected)=>{})//Promise constructor
+//Promise have 3 states Fullfilled, pending and rejected
 
 // // // const promise = new Promise((resolved , rejected)=>{
 // // //   resolved(2)
@@ -27,7 +46,11 @@
 
 
 // // function callback (resolved , rejected) {
-// //   // first parameter is function which will use for resolving the promise
+
+
+        //Promise constructor takes one callback function and two arguments in it 
+        // one is resolve, and other one is reject
+// //   // first parameter is function which will use for resolving the promise whatever the name may be even if reject the promise will resolve
 // //   // second parameter is function which will use for rejecting the promise
 // //     resolved(234) // whatever we passed argument to these two function this willbecome the result of the promise object
 
@@ -45,14 +68,26 @@
 // // const pp1 = new Promise((resolve , reject)=>{
 
 // // })
-// // console.log(pp1)
+// // console.log(pp1) ////pending [[PromiseResult]]==>undefined "zindagi bhar" bcz not resolved/reject
+            
+
+// Promise {<pending>}
+//   [[Prototype]]: Promise
+//   [[PromiseState]]: "pending"
+//   [[PromiseResult]]: undefined
+
+
+
+
+
+
 
 
 // // const pp2 = new Promise((resolve , reject)=>{
 // //   resolve('I called first')
 // //   reject('I will call later')
 // // })
-// // console.log(pp2)
+// // console.log(pp2) /// here the first function(resolve/ reject) is called whichever it may be resolve or reject
 
 
 
@@ -105,7 +140,7 @@
 // //   console.log('come here with success')
 // // }).catch(()=>{
 // //   console.log('come here with error')
-// // })
+// // })                                         //here no promise will return anything 
 
 
 
@@ -146,6 +181,8 @@
 // //   }
 // // }
 
+
+///
 
 
 // // Applications Programming Interface   , it is the way for two or more than two com putesr to cummincate with each other
@@ -303,7 +340,7 @@
 // // // var promiseExample =  new Promise((resolve) => resolve('Hey Cool Bilkul Relax'));
 
 
-// // // const data  = Promise.resolve('Hey Cool Bilkul Relax')
+// // // const data  = Promise.resolve('Hey Cool Bilkul Relax')///AISE BHI LIKH SAKTE HE AGAR HAME PATA HE KI PROMISE RESOLVE. FULLFILLED HONE WALA HE TOH
 
 // // // promiseExample.then((res)=>{
 // // //   console.log(res)
@@ -344,6 +381,12 @@
 
 
 // // //  Promise.all
+
+
+//•	Promise.all(): This method takes an array of promises and returns a single promise that resolves when all of the input promises 
+// have resolved, or rejects with the reason of the first promise that rejects.
+
+
 // // function fetcApi1 () {
 // // return new Promise((resolved , rejeccted)=>{
 // //     setTimeout(()=>{
@@ -424,6 +467,8 @@
 
 
 // // // Promie.race => this return once the any of the promise is settled (resolved , rejected)
+
+
 // // // const prRace1 =  new Promise((resolved , rejected)=>{
 // // //   setTimeout(()=>{
 // // //     resolved('Hey I am Resolved after 5 second ')

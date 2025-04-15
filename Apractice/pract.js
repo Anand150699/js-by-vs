@@ -1,22 +1,22 @@
-let a = 50;
-var b = 40;//updated to 90
-{
-  console.log(b);//40
-//   console.log(a); 
-  var b = 90;
-  let a = 200;
+async function handleInput(e){
+  const fetchData = await fetch(`http://dummyjson.com/users/search?q=${e.target.value}`)
+  const result = await fetchData.json()
+  console.log(result)
 }
 
-//var  let const 
-function call() {
-   // console.log(b); 
-   console.log(b); //undefined
-   let a = 55;
-   var b = 65;
-   console.log(a);//55
-   console.log(b);//65
- }
 
- call();
- console.log(a);//50
- console.log(b);//90
+function deboune(func, delay){
+  let timer = null
+  return function(args){
+    if(timer) clearTimeout(timer)
+    timer = setTimeout(()=>{
+      func(args)
+    },delay)
+  }
+}
+
+
+let debouncedFunc = deboune(handleInput, 2000)
+
+
+

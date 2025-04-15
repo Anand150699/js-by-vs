@@ -51,10 +51,10 @@ function increment() {
 
 // const func = increment(); //  FEC ?? 
 
-// const res =  func(); // 
-// const res1 =  func(); // 
-// const res2 =  func();// 
-// const re3 =  func();// 
+// const res =  func(); // 1
+// const res1 =  func(); // 2
+// const res2 =  func();// 3
+// const re3 =  func();// 4
 
 // console.log(res , res1 , res2 , re3)
 
@@ -68,7 +68,7 @@ function increment() {
 //         var d= 40;
 //         var c= 60;
 //         function inner () {
-//       // clousress ?? 
+//       // clousress ?? Yes cz its accessing the variables from parent lexical enviroment
 //                 console.log('hey', a , name)
 //         } 
 //         return inner;
@@ -95,3 +95,15 @@ function increment() {
 // 
 
 
+// function sum(a){
+//     return function  (b){
+//         return function (c){
+//             return function (d){
+//                 return a+b+c+d;
+//             }
+//         }
+//     }
+// }
+
+// const res = sum(1)(2)(3)(4)//// CURRYING
+// console.log(res)

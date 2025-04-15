@@ -1,7 +1,9 @@
 /// LEC. NO . 235 14 MAY 2024
 
 
+////PRIORITY/////
 
+////1.Synchronous code >>>>> 2.Asynchromous Promises >>>>> 3.WEB API (setTimeout, setInterval)
 
 console.log('Async Programming.....');
 
@@ -24,8 +26,8 @@ console.log('Async Programming.....');
 // // synchronous 
 // for(let  i=0 ;i<100000;i++){
 //   console.log(i);
-// }
-
+// }                                    //js first runs whole for loop then he goes for asynchronous code whatever the delay may be
+//JS first runs all synchronus code then he goes for asynchronous code look above for loop code
 
 
 // // lift...=> 3 sec , `10 minutes
@@ -59,6 +61,10 @@ console.log('Chaparayin...')
 
 // setTimeout , setInterval
 // Promises
+
+
+/////LEC NO 246 27 MAY 2024
+
 
 // const promise = new Promise((resolved, rejected)=>{
 //   console.log('Hey')

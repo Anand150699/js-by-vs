@@ -99,6 +99,13 @@
 // // function isObject(obj) {
 // //   return obj && !Array.isArray(obj) && typeof obj =='object'
 // // }
+
+
+
+/// LEC NO. 238 17 MAY 2024
+
+
+
 // // function flatObject(obj) {
 // //   let result  = {};
 // //     if(isObject(obj)){
@@ -152,8 +159,6 @@
 
 // // const data  = new Array([1,2,3,4])
 // // data.constructor //  => Array
-
- 
 
 // function isObject(obj) {
 //   return obj && !Array.isArray(obj) && typeof obj =='object'
